@@ -1,0 +1,486 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+#pokedex {
+    margin-top: 15vh;
+    height: 450px;
+    color: white;
+    display: flex;
+    padding: 24px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info-container {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.info-container img {
+    height: 300px;
+    margin-top: -260px;
+}
+
+.navbar {
+    color: rgb(164, 160, 160);
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar p:hover {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 16px;
+}
+
+.about-section {
+    background-color: white;
+    color: rgb(164, 160, 160);
+    font-weight: bold;
+    display: flex;
+    gap: 50px;
+    padding-left: 8px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+#open-pokemon-cart {
+    width: 320px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: auto;
+    top: 0;
+}
+
+.pokemon-type {
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: rgb(126, 138, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid wheat;
+}
+
+.dp-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-none {
+    display: none;
+}
+
+body {
+    background-image: url('./img/background.jpg');
+    background-size: contain;
+    height: 100vh;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin-top: -100px;
+}
+
+.small-info {
+    height: 300px;
+    width: 300px;
+    background-color: #bb8484;
+    border-radius: 40px;
+    margin-top: 80px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.small-info:hover {
+    transform: scale(1.05);
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    cursor: pointer;
+}
+
+#small-cart {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+}
+
+.pokemon-name {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+.padding20px{
+    padding-top: 20px;
+}
+
+.pokemon-id {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-left: 20px;
+}
+
+.justify-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-info img {
+    height: 200px;
+    margin-top: -120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.load-btn-container{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+    
+}
+
+#load-btn{
+    background-color: rgb(255, 105, 18);
+    height: 40px;
+    font-weight: bold;
+}
+
+.grass {
+    background-color: #78C850; /* Grüner Hintergrund für den Pflanzen-Typ */
+
+}
+
+.fire {
+    background-color: #F08030; /* Roter Hintergrund für den Feuer-Typ */
+
+}
+
+.water {
+    background-color: #6890F0; /* Blauer Hintergrund für den Wasser-Typ */
+
+}
+
+.electric {
+    background-color: #F8D030; /* Gelber Hintergrund für den Elektro-Typ */
+    
+}
+
+.normal {
+    background-color: #A8A878; /* Grauer Hintergrund für den Normal-Typ */
+    
+}
+
+.fighting {
+    background-color: #C03028; /* Dunkelroter Hintergrund für den Kampf-Typ */
+    
+}
+
+.flying {
+    background-color: #A890F0; /* Violetter Hintergrund für den Flug-Typ */
+    
+}
+
+.poison {
+    background-color: #A040A0; /* Lila Hintergrund für den Gift-Typ */
+    
+}
+
+.ground {
+    background-color: #E0C068; /* Braun-Gelber Hintergrund für den Boden-Typ */
+    
+}
+
+.rock {
+    background-color: #B8A038; /* Braun-Grauer Hintergrund für den Gestein-Typ */
+    
+}
+
+.bug {
+    background-color: #A8B820; /* Grün-Gelber Hintergrund für den Käfer-Typ */
+    
+}
+
+.ghost {
+    background-color: #705898; /* Lila-Grauer Hintergrund für den Geist-Typ */
+    
+}
+
+.steel {
+    background-color: #B8B8D0; /* Grau-Blauer Hintergrund für den Stahl-Typ */
+    
+}
+
+.psychic {
+    background-color: #F85888; /* Rosa Hintergrund für den Psycho-Typ */
+    
+}
+
+.ice {
+    background-color: #98D8D8; /* Blau-Grüner Hintergrund für den Eis-Typ */
+    
+}
+
+.dragon {
+    background-color: #7038F8; /* Blau-Lila Hintergrund für den Drachen-Typ */
+    
+}
+
+.dark {
+    background-color: #705848; /* Dunkelgrauer Hintergrund für den Unlicht-Typ */
+    
+}
+
+.fairy {
+    background-color: #EE99AC; /* Rosa-Beiger Hintergrund für den Fee-Typ */
+    
+}
+
+.bg_grass {
+    background-image: url('./img/grass.svg'); /* Hintergrundbild für den Gras-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_fire {
+    background-image: url('./img/fire.svg'); /* Hintergrundbild für den Feuer-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_water {
+    background-image: url('./img/water.svg'); /* Hintergrundbild für den Wasser-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_electric {
+    background-image: url('./img/electric.svg'); /* Hintergrundbild für den Elektro-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_normal {
+    background-image: url('./img/normal.svg'); /* Hintergrundbild für den Normal-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_fighting {
+    background-image: url('./img/fighting.svg'); /* Hintergrundbild für den Kampf-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_flying {
+    background-image: url('./img/flying.svg'); /* Hintergrundbild für den Flug-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_poison {
+    background-image: url('./img/poison.svg'); /* Hintergrundbild für den Gift-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_ground {
+    background-image: url('./img/ground.svg'); /* Hintergrundbild für den Boden-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_rock {
+    background-image: url('./img/rock.svg'); /* Hintergrundbild für den Gestein-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_bug {
+    background-image: url('./img/bug.svg'); /* Hintergrundbild für den Käfer-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_ghost {
+    background-image: url('./img/ghost.svg'); /* Hintergrundbild für den Geist-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_steel {
+    background-image: url('./img/steel.svg'); /* Hintergrundbild für den Stahl-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_psychic {
+    background-image: url('./img/psychic.svg'); /* Hintergrundbild für den Psycho-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_ice {
+    background-image: url('./img/ice.svg'); /* Hintergrundbild für den Eis-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_dragon {
+    background-image: url('./img/dragon.svg'); /* Hintergrundbild für den Drachen-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_dark {
+    background-image: url('./img/dark.svg'); /* Hintergrundbild für den Unlicht-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bg_fairy {
+    background-image: url('./img/fairy.svg'); /* Hintergrundbild für den Fee-Typ */
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.bgimg_grass {
+    background-image: url('./img/grass.svg'); 
+    
+}
+
+.bgimg_fire {
+    background-image: url('./img/fire.svg'); 
+}
+
+.bgimg_water {
+    background-image: url('./img/water.svg'); 
+}
+
+.bgimg_bug {
+    background-image: url('./img/bug.svg'); 
+}
+
+.bgimg_normal {
+    background-image: url('./img/normal.svg'); 
+}
+
+.bgimg_electric {
+    background-image: url('./img/electric.svg'); 
+}
+
+.bgimg_poison {
+    background-image: url('./img/poison.svg'); 
+}
+
+.bgimg_rock {
+    background-image: url('./img/rock.svg'); 
+}
+
+.bgimg_fighting {
+    background-image: url('./img/fighting.svg'); 
+}
+
+.bgimg_ground {
+    background-image: url('./img/ground.svg'); 
+}
+
+.bgimg_flying {
+    background-image: url('./img/flying.svg'); 
+}
+
+.bgimg_psychic {
+    background-image: url('./img/psychic.svg'); 
+}
+
+.bgimg_ghost {
+    background-image: url('./img/ghost.svg'); 
+}
+
+.bgimg_ice {
+    background-image: url('./img/ice.svg'); 
+}
+
+.bgimg_dragon {
+    background-image: url('./img/dragon.svg'); 
+}
+
+.bgimg_steel {
+    background-image: url('./img/steel.svg'); 
+}
+
+.bgimg_dark {
+    background-image: url('./img/dark.svg'); 
+}
+
+.bgimg_fairy {
+    background-image: url('./img/fairy.svg'); 
+}
+
+
+
