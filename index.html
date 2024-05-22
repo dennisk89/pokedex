@@ -17,18 +17,30 @@
 </head>
 
 <body onload="getPokemonData()">
-
-
-    <div id="open-pokemon-cart">
-
+    <div class="loading-spinner-bg d-none" id="loading-spinner">
+        <img src="./img/pokemon-game-1600485_1280.jpg" alt="">
     </div>
-    <div class="headline">
-        <img src="./img/headline.png" alt="">
+    <div class="d-none" id="center-loading-spinner">
+        <div class="pokemon1"></div>
     </div>
-    <div id="small-cart"></div>
-    <div id="pokemon-container"></div>
-    <div class="load-btn-container">
-    <button id="load-btn" onclick="loadMorePokemon()">Load More Pokemon</button>
+
+    <div id="background-overlay" class="background-overlay d-none" onclick="closeOpenCart()"></div>
+    <div id="open-pokemon-cart" class="d-none"></div>
+    <div id="main-content" >
+        <div class="headline">
+            <img src="./img/headline.png" alt="">
+        </div>
+        <div class="searchfield">
+            <img src="./img/pokeball.webp" alt="">
+            <input type="text" id="input" placeholder="Search Pokemon">
+            <img src="./img/pokeball.webp" alt="">
+        </div>
+        
+        <div id="small-cart"></div>
+        <div id="pokemon-container"></div>
+        <div class="load-btn-container">
+            <button id="load-btn" onclick="loadMorePokemon()">Load More Pokemon</button>
+        </div>
     </div>
 
 </body>

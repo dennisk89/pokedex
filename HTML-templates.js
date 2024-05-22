@@ -1,13 +1,15 @@
 function createPokemonDataHTML(pokemon) {
     return `
     <div id="pokedex" class="${pokemon.types[0].type.name} bgimg_${pokemon.types[0].type.name}" >
+    <img src="./img/backarrow.png" alt="" onclick="closeOpenCart()" class="back-arrow">
             <div class="dp-center">
+            
                 <h1 id="pokemon-name">${firstLetterBig(pokemon)}</h1>
                 <div>#${numberFormatter(pokemon)}</div>
             </div>
             <div class="justify-space-between">
-            <div class="pokemon-type bg_${pokemon.types[0].type.name}"></div>
-            ${pokemon.types[1] ? `<div class="bg_${pokemon.types[1].type.name} pokemon-type"></div>` : ''}
+            <div class="pokemon-type-open ${pokemon.types[0].type.name}">${firstLetterBigType(pokemon)}</div>
+            ${pokemon.types[1] ? `<div class="pokemon-type-open-two ${pokemon.types[1].type.name}">${firstLetterBigTypeTwo(pokemon)}</div>` : ''}
             </div>
         </div>
         <div class="info-container">
