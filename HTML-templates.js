@@ -13,8 +13,11 @@ function createPokemonDataHTML(pokemon) {
             </div>
         </div>
         <div class="info-container">
+        <img class="arrow-left" onclick="lastPokemon(${currentIndex})" src="./img/last.webp" alt="">
             <img src="${pokemon.sprites.other.home.front_default}" id="pokemon-image" alt="">
+            <img class="arrow-right" onclick="nextPokemon(${currentIndex})" src="./img/next.webp" alt="">
         </div>
+        
         <div class="navbar">
             <p>About</p>
             <p>Base Stats</p>
