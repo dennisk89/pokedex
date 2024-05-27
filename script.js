@@ -15,14 +15,14 @@ async function getPokemonData() {
     }
     currentIndex += pokemonPerPage;
     hideLoadingSpinner();
-    render20Pokemon();
+    render20Pokemon(pokemonArray);
 }
 
-function render20Pokemon(){
+function render20Pokemon(pokemonList) {
     let container = document.getElementById('small-cart');
     container.innerHTML = '';
-    for (let i = 0; i < pokemonArray.length; i++) {
-        container.innerHTML += create20PokemonHTML(pokemonArray[i], i);  
+    for (let i = 0; i < pokemonList.length; i++) {
+        container.innerHTML += create20PokemonHTML(pokemonList[i], i);
     }
 }
 
@@ -41,6 +41,7 @@ function createOpenCart(index) {
 }
 
 function loadMorePokemon(){
+    showLoadingSpinner();
     getPokemonData();
 }
 
@@ -60,7 +61,7 @@ function showLoadingSpinner() {
     let spinner = document.getElementById('center-loading-spinner');
     let bg = document.getElementById('loading-spinner');
     let hideContent = document.getElementById('main-content');
-    hideContent.classList.add('d-none');
+    hideContent.classList.add('blurred');
     bg.classList.remove('d-none');
     spinner.style.display = 'flex';
 }
@@ -88,6 +89,31 @@ function lastPokemon() {
         lastPokemon = pokemonArray.length - 1; 
     }
     createOpenCart(lastPokemon); 
+}
+
+function filterPokemon() {
+    let search = document.getElementById('input').value.toLowerCase();
+    let clearCart = document.getElementById('small-cart');
+    let filteredPokemonArray = pokemonArray.filter(pokemon => pokemon.name.startsWith(search));
+    clearCart.innerHTML = '';
+    render20Pokemon(filteredPokemonArray);
+}
+
+console.log(pokemonArray)
+
+function showBaseStats(){
+    let aboutSection = document.getElementById('about');
+    let statsSection = document.getElementById('base-stat');
+    aboutSection.classList.add('d-none');
+    statsSection.classList.remove('d-none');
+    
+}
+
+function showAboutSection(){
+    let aboutSection = document.getElementById('about');
+    let statsSection = document.getElementById('base-stat');
+    aboutSection.classList.remove('d-none');
+    statsSection.classList.add('d-none');
 }
 
 

@@ -19,13 +19,10 @@ function createPokemonDataHTML(pokemon) {
         </div>
         
         <div class="navbar">
-            <p>About</p>
-            <p>Base Stats</p>
-            <p>Evolution</p>
-            <p>Moves</p>
-
+            <p onclick="showAboutSection()">About</p>
+            <p onclick="showBaseStats()">Base Stats</p>
         </div>
-        <div class="about-section">
+        <div id="about" class="about-section">
             <div>
                 <p>Type</p>
                 <p>Height</p>
@@ -38,6 +35,27 @@ function createPokemonDataHTML(pokemon) {
                 <p id="weight">${weightDivide10(pokemon)}kg</p>
                 <p id="abilities">${firstLetterBigAbilitie(pokemon)}</p>
             </div>
+            </div>
+            <div id="base-stat" class="base-stats d-none">
+                <div>
+                    <p>hp</p>
+                    <p>attack</p>
+                    <p>defense</p>
+                    <p>special-attack</p>
+                    <p>special-defense</p>
+                    <p>speed</p>
+                </div>
+            <div>
+                    <p>${pokemon.stats[0].base_stat}</p>
+                    <p>${pokemon.stats[1].base_stat}</p>
+                    <p>${pokemon.stats[2].base_stat}</p>
+                    <p>${pokemon.stats[3].base_stat}</p>
+                    <p>${pokemon.stats[4].base_stat}</p>
+                    <p>${pokemon.stats[5].base_stat}</p>
+            </div>
+        </div>
+            
+        
         </div>`
         ;
 }

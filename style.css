@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
-    background-image: url('./img/background.jpg');
+    /* background-image: url('./img/background.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -130,7 +130,7 @@ body {
 }
 
 .d-none {
-    display: none;
+    display: none !important;
 }
 
 #input {
@@ -245,6 +245,20 @@ body {
 
 .searchfield img{
     height: 45px;
+}
+
+.base-stats{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: rgb(164, 160, 160);
+    font-weight: bold;
+    display: flex;
+    gap: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 #center-loading-spinner{
@@ -635,5 +649,17 @@ body {
     background-image: url('./img/fairy.svg'); 
 }
 
-
+@media(max-width: 420px){
+    .headline{
+        height: 300px;
+        padding-top: 20px;
+    }
+    #input{
+        width: 150px;
+    }
+    .searchfield{
+        gap: 15px;
+    }
+    
+}
 
